@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Station météo</title>
+    <link href="BriefMeteo.css" rel="stylesheet">
+  </head>
+  <body>
+      <h1>Bienvenue dans la station météo de la promo</h1>
+      <br>
+      <br>
+      <!-- menu de navigation -->
+      <nav>
+        <ul>
+          <li id=derniere-mesure>Dernière mesure</li>
+          <li id=top-mesures>Top mesures</li>
+          <li id=tab-mesures>Tableau des mesures</li>
+          <li id=graph-mesures>Graphique des mesures</li>
+        </ul>
+      </nav>
+      <!-- dernière mesure - deb -->
+      <div id=aff-lm>
+        <br>
+        <br>
+        <div id=aff-libelle-lm class=libelle>
+        </div>
+        <div id=aff-temperature class=mesures>
+        </div>
+        <div id=aff-humidite class=mesures>
+        </div>
+        <div id=aff-pression class=mesures>
+        </div>
+      </div>
+      <!-- dernière mesure - fin -->
+      <!-- top mesures - deb -->
+      <div id=aff-topms class=top-mesures>
+        <div class=top>
+          <!-- top mesures - humidite -->
+          <br>
+          <br>
+          <div id=aff-libelle-th class=libelle>
+          </div>
+          <div id=aff-temperature-th class=mesures>
+          </div>
+          <div id=aff-humidite-th class=mesures>
+          </div>
+          <div id=aff-pression-th class=mesures>
+          </div>
+        </div>
+        <div class=top>
+        <!-- top mesures - temperature -->
+          <br>
+          <br>
+          <div id=aff-libelle-tt class=libelle>
+          </div>
+          <div id=aff-temperature-tt class=mesures>
+          </div>
+          <div id=aff-humidite-tt class=mesures>
+          </div>
+          <div id=aff-pression-tt class=mesures>
+          </div>
+        </div>
+        <div class=top>
+        <!-- top mesures - pression -->
+          <br>
+          <br>
+          <div id=aff-libelle-tp class=libelle>
+          </div>
+          <div id=aff-temperature-tp class=mesures>
+          </div>
+          <div id=aff-humidite-tp class=mesures>
+          </div>
+          <div id=aff-pression-tp class=mesures>
+          </div>
+        </div>
+      </div>
+<!-- top mesures - fin -->
+<!-- tableau des mesures - deb -->
+  <div id=aff-tabms>
+      <table>
+          <thead class=menu-tabs>
+              <tr>
+                  <td>Date</td>
+                  <td>Température (°C)</td>
+                  <td>Humidité (%hum)</td>
+                  <td>Pression (hPa)</td>
+              </tr>
+          </thead>
+          <tbody id=aff-tableau>
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+<!-- tableau des mesures - fin -->
+<!-- graphiques de mesures - deb -->
+      <div id=aff-gm>
+          <br>
+          <p class="libelle">Le graphique des mesures est en cours de construction ...</p>
+      </div>
+<!-- graphiques de mesures - fin -->
+  </body>
+  <script type="text/javascript" src="BriefMeteo.js"></script>
+</html>

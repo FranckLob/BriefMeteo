@@ -1,0 +1,66 @@
+h1 {
+    font-size: xx-large;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* gestion de l'affichage des choix (utilisation de Flexbox) */ 
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    font-size: x-large; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: olivedrab;  }
+
+  nav>ul>li {
+    width: 500px;
+    list-style-type: none;
+  }
+
+/* gestion de l'affichage des tops mesures - affichage en colonnes */ 
+.top-mesures {
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top {
+    width: 500px;
+    float: left;
+}
+
+/* classe pour l'affichage des titres dans "dernière mesure" et "top mesures" */
+.libelle {
+    font-size: x-large;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* classe pour l'affichage des libellés des différentes mesures dans "dernière mesure" et "top mesures" */
+.mesures {
+    text-align: center;
+  }
+
+/* gestion de l'affichage du tableau de mesures */ 
+table {
+    border: 2px solid black;
+    width: 50%;
+    border-collapse: collapse;
+    margin: auto;
+  }
+
+thead>tr>td {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid black;
+    width: 200px;
+  }
+
+  tbody>tr>td {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: 2px solid black;
+    width: 200px;
+  }
